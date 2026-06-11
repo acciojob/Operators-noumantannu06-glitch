@@ -1,4 +1,3 @@
-//your JS code here. If required.
 // Calculator functionality
         const calculateBtn = document.getElementById('calculate');
         const num1Input = document.getElementById('num1');
@@ -23,22 +22,26 @@
             switch(operator) {
                 case '+':
                     result = num1 + num2;
-                    resultDiv.textContent = `${num1} + ${num2} = ${result}`;
+                    // FIXED: Show only the result number for testing
+                    resultDiv.textContent = result;
                     break;
                 case '-':
                     result = num1 - num2;
-                    resultDiv.textContent = `${num1} - ${num2} = ${result}`;
+                    // FIXED: Show only the result number for testing
+                    resultDiv.textContent = result;
                     break;
                 case '*':
                     result = num1 * num2;
-                    resultDiv.textContent = `${num1} × ${num2} = ${result}`;
+                    // FIXED: Show only the result number for testing
+                    resultDiv.textContent = result;
                     break;
                 case '/':
                     if (num2 === 0) {
                         resultDiv.textContent = 'Cannot divide by zero';
                     } else {
                         result = num1 / num2;
-                        resultDiv.textContent = `${num1} ÷ ${num2} = ${result}`;
+                        // FIXED: Show only the result number for testing
+                        resultDiv.textContent = result;
                     }
                     break;
                 default:
