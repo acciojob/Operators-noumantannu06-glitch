@@ -8,6 +8,52 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+	<div class="container">
+        <h1>Operators App</h1>
+
+        <!-- Number Input and Calculator Section -->
+        <div class="input-section">
+            <div class="input-group">
+                <label for="num1">Number 1:</label>
+                <input type="number" id="num1" placeholder="Enter first number">
+            </div>
+
+            <div class="input-group">
+                <label for="num2">Number 2:</label>
+                <input type="number" id="num2" placeholder="Enter second number">
+            </div>
+
+            <div class="selector-group">
+                <label for="operator">Select Operation:</label>
+                <select id="operator">
+                    <option value="+">Addition (+)</option>
+                    <option value="-">Subtraction (-)</option>
+                    <option value="*">Multiplication (*)</option>
+                    <option value="/">Division (/)</option>
+                </select>
+            </div>
+
+            <button id="calculate">Calculate</button>
+
+            <div id="result"></div>
+        </div>
+
+        <!-- Text Change Section -->
+        <div class="text-section">
+            <h2>Text Containers</h2>
+
+            <div class="divisions">
+                <div class="division">Hello</div>
+                <div class="division">Welcome</div>
+                <div class="division">To</div>
+                <div class="division">My</div>
+                <div class="division">Class</div>
+            </div>
+
+            <button id="change_text">Change Text</button>
+        </div>
+    </div>
+
     <script type="text/javascript" src="./script.js">
 </script>
 
